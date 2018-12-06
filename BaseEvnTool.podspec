@@ -51,22 +51,22 @@ Pod::Spec.new do |s|
    
    s.subspec 'CaseyAbsoluteLayout' do |ss|
        ss.source_files = 'BaseEvnTool/Classes/CaseyAbsoluteLayout.{h,m}'
-       ss.public_header_files = 'BaseEvnTool/CaseyAbsoluteLayout/CaseyAbsoluteLayout.h'
+       ss.public_header_files = 'BaseEvnTool/Classes/CaseyAbsoluteLayout/CaseyAbsoluteLayout.h'
    end
    
    s.subspec 'CaseyImageView' do |ss|
        ss.source_files = 'BaseEvnTool/Classes/CaseyImageView.{h,m}'
-       ss.public_header_files = 'BaseEvnTool/CaseyImageView/UIImageView+AsyLoad.h'
+       ss.public_header_files = 'BaseEvnTool/Classes/CaseyImageView/UIImageView+AsyLoad.h'
    end
    
    s.subspec 'CaseyRefresh' do |ss|
        ss.source_files = 'BaseEvnTool/Classes/CaseyRefresh.{h,m}'
-       ss.public_header_files = 'BaseEvnTool/CaseyRefresh/CaseyRefresh.h'
+       ss.public_header_files = 'BaseEvnTool/Classes/CaseyRefresh/CaseyRefresh.h'
    end
    
    s.subspec 'CaseyNetWorking' do |ss|
        ss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking.{h,m}'
-       ss.public_header_files = 'BaseEvnTool/CaseyNetWorking/CaseyNetWorking.h'
+       ss.public_header_files = 'BaseEvnTool/Classes/CaseyNetWorking/CaseyNetWorking.h'
    end
    
 
