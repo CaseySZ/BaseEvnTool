@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
   #s.source_files  = "Classes", "BaseEvnTool/Classes/**/*.{h,m}"
   #  s.public_header_files = "BaseEvnTool/BaseEvnTool.h"
 #s.exclude_files = "Classes/Exclude"
-  s.source_files  = "BaseEvnTool/Classes/BaseEvnTool.h"
+  s.source_files  =  "BaseEvnTool/Classes/BaseEvnTool.h"
     #  s.public_header_files = "BaseEvnTool/Classes/BaseEvnTool.h"
 
 
@@ -56,20 +56,66 @@ Pod::Spec.new do |s|
     
     s.subspec 'CaseyImageView' do |ss|
         ss.source_files = 'BaseEvnTool/Classes/CaseyImageView/*.{h,m}'
-        
+        ss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
     end
     
     s.subspec 'CaseyRefresh' do |ss|
         ss.source_files = 'BaseEvnTool/Classes/CaseyRefresh/**/*.{h,m}'
+    end
+    
+    # s.subspec 'CaseyNetWorking' do |ss|
+    #     ss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/**/*.{h,m}'
+    #     ss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
+        
+        # end
+
+    
+    s.subspec 'CaseyNetWorking' do |ss|
+        
+        ss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/*.{h,m}'
+        
+        ss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
+        
+        ss.subspec 'Cache' do |sss|
+        
+            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/Cache/*.{h,m}'
+            
+        end
+        
+        ss.subspec 'Update' do |sss|
+            
+            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/Update/*.{h,m}'
+            
+        end
+        
+        ss.subspec 'DownFile' do |sss|
+            
+            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/DownFile/*.{h,m}'
+            # ss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
+            
+        end
+        
+        ss.subspec 'ConvertObject' do |sss|
+            
+            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/ConvertObject/*.{h,m}'
+            
+        end
+        
+        ss.subspec 'Multiple Task' do |sss|
+            
+            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/MultipleTask/*.{h,m}'
+            
+        end
+        
         
     end
     
-    s.subspec 'CaseyNetWorking' do |ss|
-        ss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/**/*.{h,m}'
+    
+    s.subspec 'RouteRoot' do |ss|
+        ss.source_files = 'BaseEvnTool/Classes/RouteRoot/*.{h,m}'
+        
         
     end
-
-   
  
 
 end
