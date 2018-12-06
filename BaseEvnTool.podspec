@@ -11,39 +11,30 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BaseEvnTool"
-  s.version      = "1.0.1"
+  s.version      = "1.2.0"
   s.summary      = "base tool for developer."
   s.description  = <<-DESC
             base tool for developer project
                    DESC
 
-  s.homepage     = "https://github.com/sunyong445/BaseEvnTool"
-
+   s.homepage     = "https://github.com/sunyong445/BaseEvnTool"
 
    s.license      = { :type => "MIT", :file => "LICENSE" }
 
-
-
    s.author             = { "sunyong445" => "87281923@qq.com" }
   
-
    s.platform     = :ios
-
-
    s.ios.deployment_target = "8.0"
+   s.source       = { :git => "https://github.com/sunyong445/BaseEvnTool.git", :tag => "#{s.version}" }
 
-
-
-  s.source       = { :git => "https://github.com/sunyong445/BaseEvnTool.git", :tag => "#{s.version}" }
-
-  s.frameworks = "Foundation", "UIKit"
-  s.dependency "AFNetworking"
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
+   s.frameworks = "Foundation", "UIKit"
+   s.dependency "AFNetworking"
+   s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
+   s.requires_arc = true
   
-  s.requires_arc = true
   
-  #s.source_files  = "Classes", "BaseEvnTool/Classes/**/*.{h,m}"
   s.source_files  =  "BaseEvnTool/Classes/BaseEvnTool.h"
+  s.public_header_files = "BaseEvnTool/Classes/BaseEvnTool.h"
   
     s.subspec 'CaseyAbsoluteLayout' do |ss|
         ss.source_files = 'BaseEvnTool/Classes/CaseyAbsoluteLayout/*.{h,m}'
