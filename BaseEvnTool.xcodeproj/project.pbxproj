@@ -102,7 +102,7 @@
 		C91C8DE821B8E73500952B31 /* NetMananger+UpdateFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetMananger+UpdateFile.m"; sourceTree = "<group>"; };
 		C91C8DEA21B8E73500952B31 /* NSObject+RouteRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RouteRoot.h"; sourceTree = "<group>"; };
 		C91C8DEB21B8E73500952B31 /* NSObject+RouteRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RouteRoot.m"; sourceTree = "<group>"; };
-		C91C8E0221B8E79B00952B31 /* BaseEvnTool.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BaseEvnTool.podspec; sourceTree = "<group>"; };
+		C91C8E0221B8E79B00952B31 /* BaseEvnTool.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BaseEvnTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +177,7 @@
 				C91C8DAF21B8E73500952B31 /* CaseyAbsoluteLayout */,
 				C91C8DB521B8E73500952B31 /* CaseyImageView */,
 				C91C8DBC21B8E73500952B31 /* CaseyRefresh */,
-				C91C8DD021B8E73500952B31 /* Network */,
+				C91C8DD021B8E73500952B31 /* CaseyNetWorking */,
 				C91C8DE921B8E73500952B31 /* RouteRoot */,
 			);
 			path = Classes;
@@ -255,7 +255,7 @@
 			path = HeaderView;
 			sourceTree = "<group>";
 		};
-		C91C8DD021B8E73500952B31 /* Network */ = {
+		C91C8DD021B8E73500952B31 /* CaseyNetWorking */ = {
 			isa = PBXGroup;
 			children = (
 				C91C8DD621B8E73500952B31 /* CaseyNetWorking.h */,
@@ -267,7 +267,7 @@
 				C91C8DE521B8E73500952B31 /* NetMananger.m */,
 				C91C8DE621B8E73500952B31 /* Update */,
 			);
-			path = Network;
+			path = CaseyNetWorking;
 			sourceTree = "<group>";
 		};
 		C91C8DD121B8E73500952B31 /* Cache */ = {
