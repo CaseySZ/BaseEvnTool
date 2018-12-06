@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
         ss.subspec 'Mananger' do |sss|
             
             sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/Mananger/*.{h,m}'
-           
+            sss.dependency 'CaseyNetWorking/Cache', 
         end
         
         ss.subspec 'Cache' do |sss|

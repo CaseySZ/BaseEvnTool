@@ -7,9 +7,6 @@
 //  github地址: 
 
 #import <Foundation/Foundation.h>
-#import "NSDictionary+ConvertObject.h"
-
-
 
 @class NetRequestInfo;
 
