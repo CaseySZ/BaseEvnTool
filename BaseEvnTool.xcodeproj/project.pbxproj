@@ -258,8 +258,8 @@
 		C91C8DD021B8E73500952B31 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C91C8DD121B8E73500952B31 /* Cache */,
 				C91C8DD621B8E73500952B31 /* CaseyNetWorking.h */,
+				C91C8DD121B8E73500952B31 /* Cache */,
 				C91C8DD721B8E73500952B31 /* ConvertObject */,
 				C91C8DDA21B8E73500952B31 /* DownFile */,
 				C91C8DDF21B8E73500952B31 /* Multiple Task */,
