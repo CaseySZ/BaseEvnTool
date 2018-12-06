@@ -49,7 +49,6 @@
         CFRelease(backImageRef);
     }else{
         
-        NSLog(@"image data");
     }
     if (unsupportedColorSpace) {
         CGColorSpaceRelease(colorspaceRef);

@@ -180,18 +180,17 @@
             
             // 转为即将刷新状态
             
-            NSLog(@"CyRefreshStatePulling");
             
             self.state = CyRefreshStatePulling;
             
         } else if (self.state == CyRefreshStatePulling && offsetY >= normal2pullingOffsetY) {
             // 转为普通状态
-             NSLog(@"CyRefreshStateIdle");
+            
             self.state = CyRefreshStateIdle;
         }
     } else if (self.state == CyRefreshStatePulling) {// 即将刷新 && 手松开
         // 开始刷新
-        NSLog(@"beginRefreshing");
+    
         [self beginRefreshing];
     } else{
         
