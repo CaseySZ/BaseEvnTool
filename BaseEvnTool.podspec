@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BaseEvnTool"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "base tool for developer."
   s.description  = <<-DESC
             base tool for developer project
@@ -43,12 +43,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   
   #s.source_files  = "Classes", "BaseEvnTool/Classes/**/*.{h,m}"
-  #  s.public_header_files = "BaseEvnTool/BaseEvnTool.h"
-#s.exclude_files = "Classes/Exclude"
   s.source_files  =  "BaseEvnTool/Classes/BaseEvnTool.h"
-    #  s.public_header_files = "BaseEvnTool/Classes/BaseEvnTool.h"
-
-
+  
     s.subspec 'CaseyAbsoluteLayout' do |ss|
         ss.source_files = 'BaseEvnTool/Classes/CaseyAbsoluteLayout/*.{h,m}'
         
@@ -61,6 +57,10 @@ Pod::Spec.new do |s|
     
     s.subspec 'CaseyRefresh' do |ss|
         ss.source_files = 'BaseEvnTool/Classes/CaseyRefresh/**/*.{h,m}'
+    end
+    
+    s.subspec 'RouteRoot' do |ss|
+        ss.source_files = 'BaseEvnTool/Classes/RouteRoot/*.{h,m}'
     end
     
     # s.subspec 'CaseyNetWorking' do |ss|
@@ -124,11 +124,7 @@ Pod::Spec.new do |s|
     end
     
     
-    s.subspec 'RouteRoot' do |ss|
-        ss.source_files = 'BaseEvnTool/Classes/RouteRoot/*.{h,m}'
-        
-        
-    end
+   
  
 
 end
