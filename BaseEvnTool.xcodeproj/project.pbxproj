@@ -14,7 +14,6 @@
 		C91C8D4A21B8D21E00952B31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91C8D4921B8D21E00952B31 /* Assets.xcassets */; };
 		C91C8D4D21B8D21E00952B31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91C8D4B21B8D21E00952B31 /* LaunchScreen.storyboard */; };
 		C91C8D5021B8D21E00952B31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C91C8D4F21B8D21E00952B31 /* main.m */; };
-		C91C8D5721B8D24F00952B31 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C91C8D5621B8D24F00952B31 /* Podfile */; };
 		C91C8DEC21B8E73500952B31 /* CyFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C91C8DB221B8E73500952B31 /* CyFrame.m */; };
 		C91C8DED21B8E73500952B31 /* UIView+CyFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C91C8DB421B8E73500952B31 /* UIView+CyFrame.m */; };
 		C91C8DEE21B8E73500952B31 /* EOCLoadImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C91C8DB721B8E73500952B31 /* EOCLoadImageOperation.m */; };
@@ -37,6 +36,7 @@
 		C91C8DFF21B8E73500952B31 /* NetMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = C91C8DE521B8E73500952B31 /* NetMananger.m */; };
 		C91C8E0021B8E73500952B31 /* NetMananger+UpdateFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C91C8DE821B8E73500952B31 /* NetMananger+UpdateFile.m */; };
 		C91C8E0121B8E73500952B31 /* NSObject+RouteRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = C91C8DEB21B8E73500952B31 /* NSObject+RouteRoot.m */; };
+		C91C8E0321B8E79B00952B31 /* BaseEvnTool.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C91C8E0221B8E79B00952B31 /* BaseEvnTool.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +53,6 @@
 		C91C8D4C21B8D21E00952B31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C91C8D4E21B8D21E00952B31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C91C8D4F21B8D21E00952B31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C91C8D5621B8D24F00952B31 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		C91C8DAE21B8E73500952B31 /* BaseEvnTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseEvnTool.h; sourceTree = "<group>"; };
 		C91C8DB021B8E73500952B31 /* CaseyAbsoluteLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseyAbsoluteLayout.h; sourceTree = "<group>"; };
 		C91C8DB121B8E73500952B31 /* CyFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyFrame.h; sourceTree = "<group>"; };
@@ -103,6 +102,7 @@
 		C91C8DE821B8E73500952B31 /* NetMananger+UpdateFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetMananger+UpdateFile.m"; sourceTree = "<group>"; };
 		C91C8DEA21B8E73500952B31 /* NSObject+RouteRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RouteRoot.h"; sourceTree = "<group>"; };
 		C91C8DEB21B8E73500952B31 /* NSObject+RouteRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RouteRoot.m"; sourceTree = "<group>"; };
+		C91C8E0221B8E79B00952B31 /* BaseEvnTool.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BaseEvnTool.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,7 @@
 		C91C8D3421B8D21D00952B31 = {
 			isa = PBXGroup;
 			children = (
-				C91C8D5621B8D24F00952B31 /* Podfile */,
+				C91C8E0221B8E79B00952B31 /* BaseEvnTool.podspec */,
 				C91C8D3F21B8D21D00952B31 /* BaseEvnTool */,
 				C91C8D3E21B8D21D00952B31 /* Products */,
 				8046EDBEA197ECAFDEAB80D6 /* Pods */,
@@ -389,8 +389,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C91C8D4D21B8D21E00952B31 /* LaunchScreen.storyboard in Resources */,
+				C91C8E0321B8E79B00952B31 /* BaseEvnTool.podspec in Resources */,
 				C91C8D4A21B8D21E00952B31 /* Assets.xcassets in Resources */,
-				C91C8D5721B8D24F00952B31 /* Podfile in Resources */,
 				C91C8D4821B8D21D00952B31 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
