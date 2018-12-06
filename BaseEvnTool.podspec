@@ -76,16 +76,22 @@ Pod::Spec.new do |s|
         
         ss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
         
-        ss.subspec 'Cache' do |sss|
+        ss.subspec 'Mananger' do |sss|
             
-            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/Cache/*.{h,m}'
+            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/Mananger/*.{h,m}'
             
         end
         
-        ss.subspec 'Mananger' do |sss|
-    
-            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/Mananger/*.{h,m}'
-    
+        ss.subspec 'Cache' do |sss|
+            
+            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/Cache/*.{h,m}'
+            ss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
+        end
+        
+        ss.subspec 'ConvertObject' do |sss|
+            
+            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/ConvertObject/*.{h,m}'
+            
         end
         
         
@@ -98,15 +104,11 @@ Pod::Spec.new do |s|
         ss.subspec 'DownFile' do |sss|
             
             sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/DownFile/*.{h,m}'
-            # ss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
+            ss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
             sss.dependency 'Mananger'
         end
         
-        ss.subspec 'ConvertObject' do |sss|
-            
-            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/ConvertObject/*.{h,m}'
-            
-        end
+        
         
         ss.subspec 'MultipleTask' do |sss|
             
