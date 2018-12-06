@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BaseEvnTool"
-  s.version      = "1.1.6"
+  s.version      = "1.0.0"
   s.summary      = "base tool for developer."
   s.description  = <<-DESC
             base tool for developer project
@@ -72,21 +72,24 @@ Pod::Spec.new do |s|
     
     s.subspec 'CaseyNetWorking' do |ss|
         
-        # ss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/*.{h,m}'
+        ss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/*.{h,m}'
         
         ss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
-        
-        ss.subspec 'Mananger' do |sss|
-            
-            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/Mananger/*.{h,m}'
-            
-        end
         
         ss.subspec 'Cache' do |sss|
             
             sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/Cache/*.{h,m}'
-            ss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
+            sss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
+            
         end
+        
+        ss.subspec 'Mananger' do |sss|
+            
+            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/Mananger/*.{h,m}'
+            sss.dependency 'BaseEvnTool/CaseyNetWorking/Cache'
+        end
+        
+        
         
         ss.subspec 'ConvertObject' do |sss|
             
@@ -104,7 +107,7 @@ Pod::Spec.new do |s|
         ss.subspec 'DownFile' do |sss|
             
             sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/DownFile/*.{h,m}'
-            ss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
+            sss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
             sss.dependency 'BaseEvnTool/CaseyNetWorking/Mananger'
         end
         
