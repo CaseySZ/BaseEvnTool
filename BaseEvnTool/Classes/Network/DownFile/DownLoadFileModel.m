@@ -30,17 +30,10 @@
         
         NSString *fileName = [filePath stringByDeletingLastPathComponent];
         if(fileName.length == 0){
-            
-//            if (DEBUG){
-//
-//                NSLog(@"error: %@不是文件路径, DEBUG模式默认存入到Document文件下",filePath);
-//                NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-//                _filePath = [docPath stringByAppendingPathComponent:filePath];
-//
-//            }else{
+
     
-                NSLog(@"error: %@不是文件路径",filePath);
-           // }
+            NSLog(@"error: %@不是文件路径",filePath);
+          
         }
         
     }else{
