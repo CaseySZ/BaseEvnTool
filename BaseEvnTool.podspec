@@ -85,14 +85,14 @@ Pod::Spec.new do |s|
         ss.subspec 'Update' do |sss|
             
             sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/Update/*.{h,m}'
-            
+            sss.dependency 'CaseyNetWorking'
         end
         
         ss.subspec 'DownFile' do |sss|
             
             sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/DownFile/*.{h,m}'
             # ss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
-            
+            sss.dependency 'CaseyNetWorking'
         end
         
         ss.subspec 'ConvertObject' do |sss|
@@ -101,10 +101,10 @@ Pod::Spec.new do |s|
             
         end
         
-        ss.subspec 'Multiple Task' do |sss|
+        ss.subspec 'MultipleTask' do |sss|
             
             sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/MultipleTask/*.{h,m}'
-            
+            sss.dependency 'CaseyNetWorking'
         end
         
         
