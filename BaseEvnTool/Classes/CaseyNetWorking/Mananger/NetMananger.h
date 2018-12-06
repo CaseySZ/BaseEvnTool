@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "NSDictionary+ConvertObject.h"
-#import "NetRequestInfo.h"
 
 
 
