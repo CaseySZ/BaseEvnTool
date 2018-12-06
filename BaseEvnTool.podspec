@@ -39,8 +39,8 @@ Pod::Spec.new do |s|
 
   #s.source_files  = "Classes", "BaseEvnTool/Classes/**/*.{h,m}"
 #s.exclude_files = "Classes/Exclude"
-    s.source_files  = "BaseEvnTool/BaseEvnTool.h"
-    s.public_header_files = "BaseEvnTool/BaseEvnTool.h"
+    s.source_files  = "BaseEvnTool/Classes/BaseEvnTool.h"
+    s.public_header_files = "BaseEvnTool/Classes/BaseEvnTool.h"
 
    s.frameworks = "Foundation", "UIKit"
 
@@ -50,22 +50,22 @@ Pod::Spec.new do |s|
    s.dependency "AFNetworking"
    
    s.subspec 'CaseyAbsoluteLayout' do |ss|
-       ss.source_files = 'BaseEvnTool/CaseyAbsoluteLayout.{h,m}'
+       ss.source_files = 'BaseEvnTool/Classes/CaseyAbsoluteLayout.{h,m}'
        ss.public_header_files = 'BaseEvnTool/CaseyAbsoluteLayout/CaseyAbsoluteLayout.h'
    end
    
    s.subspec 'CaseyImageView' do |ss|
-       ss.source_files = 'BaseEvnTool/CaseyImageView.{h,m}'
+       ss.source_files = 'BaseEvnTool/Classes/CaseyImageView.{h,m}'
        ss.public_header_files = 'BaseEvnTool/CaseyImageView/UIImageView+AsyLoad.h'
    end
    
    s.subspec 'CaseyRefresh' do |ss|
-       ss.source_files = 'BaseEvnTool/CaseyRefresh.{h,m}'
+       ss.source_files = 'BaseEvnTool/Classes/CaseyRefresh.{h,m}'
        ss.public_header_files = 'BaseEvnTool/CaseyRefresh/CaseyRefresh.h'
    end
    
    s.subspec 'CaseyNetWorking' do |ss|
-       ss.source_files = 'BaseEvnTool/CaseyNetWorking.{h,m}'
+       ss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking.{h,m}'
        ss.public_header_files = 'BaseEvnTool/CaseyNetWorking/CaseyNetWorking.h'
    end
    
