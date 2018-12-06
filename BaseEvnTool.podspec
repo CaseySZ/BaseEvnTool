@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BaseEvnTool"
-  s.version      = "1.1.3"
+  s.version      = "1.1.5"
   s.summary      = "base tool for developer."
   s.description  = <<-DESC
             base tool for developer project
@@ -76,17 +76,18 @@ Pod::Spec.new do |s|
         
         ss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
         
-        ss.subspec 'Mananger' do |sss|
-            
-            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/Mananger/*.{h,m}'
-            sss.dependency 'CaseyNetWorking/Cache', 
-        end
-        
         ss.subspec 'Cache' do |sss|
-        
+            
             sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/Cache/*.{h,m}'
             
         end
+        
+        ss.subspec 'Mananger' do |sss|
+    
+            sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/Mananger/*.{h,m}'
+    
+        end
+        
         
         ss.subspec 'Update' do |sss|
             
@@ -111,6 +112,7 @@ Pod::Spec.new do |s|
             
             sss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/MultipleTask/*.{h,m}'
             sss.dependency 'CaseyNetWorking/Mananger'
+            
         end
         
         
