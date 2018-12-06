@@ -42,10 +42,10 @@ Pod::Spec.new do |s|
   
   s.requires_arc = true
   
-  s.source_files  = "Classes", "BaseEvnTool/Classes/**/*.{h,m}"
+  #s.source_files  = "Classes", "BaseEvnTool/Classes/**/*.{h,m}"
   #  s.public_header_files = "BaseEvnTool/BaseEvnTool.h"
 #s.exclude_files = "Classes/Exclude"
-#  s.source_files  = "BaseEvnTool/Classes/BaseEvnTool.h"
+  s.source_files  = "BaseEvnTool/Classes/BaseEvnTool.h"
     #  s.public_header_files = "BaseEvnTool/Classes/BaseEvnTool.h"
 
 

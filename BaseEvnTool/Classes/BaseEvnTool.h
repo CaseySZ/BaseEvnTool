@@ -6,10 +6,13 @@
 //  Copyright © 2018 Casey. All rights reserved.
 //
 
-#import "CaseyAbsoluteLayout.h"
-#import "UIImageView+AsyLoad.h"
-#import "CaseyRefresh.h"
-#import "CaseyNetWorking.h"
-#import "NSObject+RouteRoot.h"
+#ifndef _BaseEvnTool_
+    #define _BaseEvnTool_
 
+    #import "CaseyAbsoluteLayout.h"
+    #import "UIImageView+AsyLoad.h"
+    #import "CaseyRefresh.h"
+    #import "CaseyNetWorking.h"
+    #import "NSObject+RouteRoot.h"
 
+#endif
