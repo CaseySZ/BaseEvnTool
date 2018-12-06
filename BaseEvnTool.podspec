@@ -36,22 +36,40 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/sunyong445/BaseEvnTool.git", :tag => "#{s.version}" }
 
-
+  s.frameworks = "Foundation", "UIKit"
+  s.dependency "AFNetworking"
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
   
+  s.requires_arc = true
+  
+  s.source_files  = "Classes", "BaseEvnTool/Classes/**/*.{h,m}"
+  #  s.public_header_files = "BaseEvnTool/BaseEvnTool.h"
 #s.exclude_files = "Classes/Exclude"
-# s.source_files  = "BaseEvnTool/Classes/BaseEvnTool.h"
+#  s.source_files  = "BaseEvnTool/Classes/BaseEvnTool.h"
     #  s.public_header_files = "BaseEvnTool/Classes/BaseEvnTool.h"
 
-   s.frameworks = "Foundation", "UIKit"
-   s.requires_arc = true
-   s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
-   s.dependency "AFNetworking"
+
+    s.subspec 'CaseyAbsoluteLayout' do |ss|
+        ss.source_files = 'BaseEvnTool/Classes/CaseyAbsoluteLayout/*.{h,m}'
+        
+    end
+    
+    s.subspec 'CaseyImageView' do |ss|
+        ss.source_files = 'BaseEvnTool/Classes/CaseyImageView/*.{h,m}'
+        
+    end
+    
+    s.subspec 'CaseyRefresh' do |ss|
+        ss.source_files = 'BaseEvnTool/Classes/CaseyRefresh/**/*.{h,m}'
+        
+    end
+    
+    s.subspec 'CaseyNetWorking' do |ss|
+        ss.source_files = 'BaseEvnTool/Classes/CaseyNetWorking/**/*.{h,m}'
+        
+    end
+
    
-   s.source_files  = "Classes" ,"BaseEvnTool/Classes/BaseEvnTool.h"
-   s.public_header_files = "BaseEvnTool/Classes/BaseEvnTool.h"
-   
-  
-   
+ 
 
 end
-
