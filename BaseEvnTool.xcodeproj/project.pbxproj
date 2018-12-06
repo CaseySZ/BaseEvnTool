@@ -212,7 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				C91C8DBD21B8E73500952B31 /* CaseyRefresh.h */,
-				C91C8E0521B938B400952B31 /* ScrollerProperty */,
+				C91C8DC221B8E73500952B31 /* UIScrollView+CyRefreshTable.h */,
+				C91C8DC321B8E73500952B31 /* UIScrollView+CyRefreshTable.m */,
 				C91C8DBE21B8E73500952B31 /* Category */,
 				C91C8DC621B8E73500952B31 /* FooterView */,
 				C91C8DCB21B8E73500952B31 /* HeaderView */,
@@ -335,15 +336,6 @@
 				C91C8DE521B8E73500952B31 /* NetMananger.m */,
 			);
 			path = Mananger;
-			sourceTree = "<group>";
-		};
-		C91C8E0521B938B400952B31 /* ScrollerProperty */ = {
-			isa = PBXGroup;
-			children = (
-				C91C8DC221B8E73500952B31 /* UIScrollView+CyRefreshTable.h */,
-				C91C8DC321B8E73500952B31 /* UIScrollView+CyRefreshTable.m */,
-			);
-			path = ScrollerProperty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
