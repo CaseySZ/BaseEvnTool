@@ -58,14 +58,14 @@ Pod::Spec.new do |s|
         
         ss.subspec 'Category' do |sss|
             
-            sss.source_files = 'BaseEvnTool/CaseyRefresh/Category/*.{h,m}'
+            sss.source_files = 'BaseEvnTool/Classes/CaseyRefresh/Category/*.{h,m}'
             sss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
             
         end
         
         ss.subspec 'FooterView' do |sss|
             
-            sss.source_files = 'BaseEvnTool/CaseyRefresh/FooterView/*.{h,m}'
+            sss.source_files = 'BaseEvnTool/Classes/CaseyRefresh/FooterView/*.{h,m}'
             sss.dependency 'BaseEvnTool/CaseyRefresh/Category'
         end
         
@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
         
         ss.subspec 'HeaderView' do |sss|
             
-            sss.source_files = 'BaseEvnTool/CaseyRefresh/HeaderView/*.{h,m}'
+            sss.source_files = 'BaseEvnTool/Classes/CaseyRefresh/HeaderView/*.{h,m}'
             sss.dependency 'BaseEvnTool/CaseyRefresh/Category'
         end
         
