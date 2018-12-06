@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@class NetRequestInfo;
-
 
 NS_ASSUME_NONNULL_BEGIN
 
