@@ -7,8 +7,7 @@
 //
 
 #import "NetMananger+MultipleTask.h"
-#import "NetMananger.h"
-
+#import "NetRequestInfo.h"
 #import <objc/runtime.h>
 
 

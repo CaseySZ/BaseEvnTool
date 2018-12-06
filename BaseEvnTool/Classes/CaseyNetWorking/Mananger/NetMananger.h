@@ -9,6 +9,29 @@
 #import <Foundation/Foundation.h>
 
 
+
+typedef NSDictionary* (^RequsetAddBodyParamBlock)(NSDictionary *paramDict);
+typedef NSDictionary* (^RequestCompletionAddExcepetionHanle)(NSError* _Nullable errror, NSString * _Nullable cacheKey, NSDictionary* result);
+typedef BOOL (^RequestAddCacheCondition)(NSDictionary *result);
+
+typedef void (^RequestCompletionHandler)( NSError* _Nullable error,  BOOL isCache, NSDictionary* _Nullable result);
+typedef void (^netSuccessbatchBlock)(NSArray *operationAry);
+
+
+typedef enum : NSUInteger {
+    RequestBodyJsonEncode = 0,
+    RequestBodyUrlEncode,
+    RequestBodyStringEncode
+} ParamEncodeStyle;
+
+typedef enum : NSInteger {
+    JsonParser = 0,
+    XmlParser,
+    FileParser
+} RepsonsePaserStyle;
+
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 
