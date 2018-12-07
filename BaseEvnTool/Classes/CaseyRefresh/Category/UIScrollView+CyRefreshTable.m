@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
     if (cy_header != self.cy_header){
         UIView *headerView = (UIView*)self.cy_header;
         [headerView removeFromSuperview];
-        [self insertSubview:cy_header atIndex:0];
+        [self insertSubview:(UIView*)cy_header atIndex:0];
         objc_setAssociatedObject(self, @selector(cy_header),cy_header, OBJC_ASSOCIATION_RETAIN);
     }
 }
@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
     if (cy_footer != self.cy_footer){
         UIView *footerView = (UIView*)self.cy_footer;
         [footerView removeFromSuperview];
-        [self insertSubview:cy_footer atIndex:0];
+        [self insertSubview:(UIView*)cy_footer atIndex:0];
         objc_setAssociatedObject(self, @selector(cy_footer),cy_footer, OBJC_ASSOCIATION_RETAIN);
     }
 }

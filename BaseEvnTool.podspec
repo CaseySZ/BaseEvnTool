@@ -59,8 +59,7 @@ Pod::Spec.new do |s|
         ss.subspec 'Category' do |sss|
             
             sss.source_files = 'BaseEvnTool/Classes/CaseyRefresh/Category/*.{h,m}'
-            sss.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
-            
+        
         end
         
         ss.subspec 'FooterView' do |sss|
