@@ -7,11 +7,10 @@
 //
 
 #import "UIScrollView+CyRefreshTable.h"
-#import "CyRefreshHeaderBaseView.h"
 #import <objc/runtime.h>
-#import "CyRefreshFooterBaseView.h"
 
 
+NS_ASSUME_NONNULL_BEGIN
 
 @implementation UIScrollView (CyRefreshTable)
 
@@ -26,7 +25,8 @@
     
     
     if (cy_header != self.cy_header){
-        [self.cy_header removeFromSuperview];
+        UIView *headerView = (UIView*)self.cy_header;
+        [headerView removeFromSuperview];
         [self insertSubview:cy_header atIndex:0];
         objc_setAssociatedObject(self, @selector(cy_header),cy_header, OBJC_ASSOCIATION_RETAIN);
     }
@@ -42,7 +42,8 @@
     
     
     if (cy_footer != self.cy_footer){
-        [self.cy_footer removeFromSuperview];
+        UIView *footerView = (UIView*)self.cy_footer;
+        [footerView removeFromSuperview];
         [self insertSubview:cy_footer atIndex:0];
         objc_setAssociatedObject(self, @selector(cy_footer),cy_footer, OBJC_ASSOCIATION_RETAIN);
     }
@@ -51,3 +52,5 @@
 
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -8,7 +8,6 @@
 
 #import "CyRefreshFooterBaseView.h"
 #import "UIView+CyRefreshFrame.h"
-#import "UIScrollView+CyRefreshTable.h"
 #import "UIScrollView+CyInsets.h"
 
 @interface CyRefreshFooterBaseView()
